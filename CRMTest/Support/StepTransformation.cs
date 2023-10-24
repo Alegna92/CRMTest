@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CRMTest.Support
+﻿namespace CRMTest.Support
 {
     [Binding]
     public class StepTransformation
@@ -16,9 +10,10 @@ namespace CRMTest.Support
             if (string.IsNullOrEmpty(input))
                 return result;
             string[] values = input.Split(',');
+
             foreach (string value in values)
             {
-                if(int.TryParse(value, out int intValue))
+                if (int.TryParse(value, out int intValue))
                 {
                     result.Add(intValue);
                 }

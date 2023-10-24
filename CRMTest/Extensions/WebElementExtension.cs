@@ -6,7 +6,7 @@ namespace CRMTest.Extensions
     {
         public static IWebDriver GetWebDriver(this IWebElement webElement)
         {
-            if(webElement is IWrapsDriver wrapsDriver)
+            if (webElement is IWrapsDriver wrapsDriver)
             {
                 return wrapsDriver.WrappedDriver;
             }

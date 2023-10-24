@@ -1,5 +1,4 @@
-﻿using CRMTest.Elements;
-using CRMTest.Pages;
+﻿using CRMTest.Pages;
 using OpenQA.Selenium;
 
 namespace CRMTest.StepDefinitions

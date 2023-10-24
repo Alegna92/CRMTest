@@ -1,7 +1,5 @@
 ﻿using CRMTest.Extensions;
 using OpenQA.Selenium;
-using SpecFlow.Internal.Json;
-using System.Text;
 
 namespace CRMTest.Elements
 {
@@ -36,9 +34,6 @@ namespace CRMTest.Elements
         {
             return _webElement.Text;
         }
-
-
-
 
     }
 }

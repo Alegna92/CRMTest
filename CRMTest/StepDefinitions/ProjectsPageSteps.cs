@@ -7,7 +7,7 @@ namespace CRMTest.StepDefinitions
     public class ProjectsPageSteps
     {
         private readonly ProjectsPage _projectsPage;
-        
+
         public ProjectsPageSteps(IWebDriver webDriver)
         {
             _projectsPage = new ProjectsPage(webDriver);
@@ -19,14 +19,14 @@ namespace CRMTest.StepDefinitions
             _projectsPage.WaitTillIsLoaded();
         }
 
-        [When ("user clicks on Run report button")]
+        [When("user clicks on Run report button")]
         public void UserClicksOnRunReportButton()
         {
             _projectsPage.RunReportButton.Click();
             _projectsPage.WaitTillIsLoaded();
         }
 
-        [Then ("user should see returned report results")]
+        [Then("user should see returned report results")]
         public void UserShouldSeeReturnedReportResults()
         {
             _projectsPage.ReportResultsElement.RowCount().Should().BeGreaterThan(0);

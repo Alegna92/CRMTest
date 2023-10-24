@@ -15,7 +15,7 @@ namespace CRMTest.Elements
 
         public void SetValue(string value)
         {
-            _selectElement.SelectByText(value);     
+            _selectElement.SelectByText(value);
         }
 
         public string GetValue()

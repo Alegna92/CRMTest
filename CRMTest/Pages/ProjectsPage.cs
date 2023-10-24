@@ -15,6 +15,7 @@ namespace CRMTest.Pages
         {
             _webDriver = webDriver;
         }
+
         public void WaitTillIsLoaded()
         {
             _webDriver.WaitForElementToExists(By.Id("main-title-module"));

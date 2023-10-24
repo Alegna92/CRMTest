@@ -18,7 +18,7 @@ namespace CRMTest.Support
             var settings = config.Get<Appsettings>();
             var builder = new ServiceCollection();
 
-            builder.AddScoped<Appsettings>(provider => settings);
+            builder.AddSingleton<Appsettings>(settings ?? new Appsettings());
 
             builder.AddScoped<IWebDriver>(provider =>
             {

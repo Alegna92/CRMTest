@@ -10,12 +10,10 @@ namespace CRMTest.StepDefinitions
     public class DetailsContactPageSteps
     {
         private readonly ContactDetailsPage _detailsContactPage;
-        private readonly IWebDriver _webDriver;
         private readonly ScenarioContext _scenarioContext;
         public DetailsContactPageSteps(IWebDriver webDriver, ScenarioContext scenarioContext)
         {
             _detailsContactPage = new ContactDetailsPage(webDriver);
-            _webDriver = webDriver;
             _scenarioContext = scenarioContext;
         }
 

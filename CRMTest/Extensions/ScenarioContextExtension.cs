@@ -1,6 +1,4 @@
-﻿using OpenQA.Selenium;
-
-namespace CRMTest.Extensions
+﻿namespace CRMTest.Extensions
 {
     public static class ScenarioContextExtension
     {

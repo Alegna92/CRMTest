@@ -44,18 +44,18 @@ namespace CRMTest.StepDefinitions
             _webDriver.AcceptAllert();
         }
 
-        [When ("user selects (.*) reports")]
+        [When("user selects (.*) reports")]
         public void UserSelectsXReports(List<int> indexes)
         {
             _deletedRowsCount = indexes.Count;
             _reportsPage.TableElement.SelectRows(indexes);
         }
 
-        [Then ("reports should be deleted")]
+        [Then("reports should be deleted")]
         public void ReportsShouldBeDeleted()
         {
             _reportsPage.WaitTillIsLoaded();
-            _reportsPage.TableElement.GetTotalRowCount().Should().Be((_totalRowsCountBeforeDelete)-(_deletedRowsCount));
+            _reportsPage.TableElement.GetTotalRowCount().Should().Be((_totalRowsCountBeforeDelete) - (_deletedRowsCount));
         }
     }
 }
